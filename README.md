@@ -211,7 +211,16 @@ bash install.sh
 **Macos**
 
 ```
-bash install_osx.sh
+1. 安装anaconda
+    a.下载 https://www.anaconda.com/
+    b. 搭建环境
+        i. 新建环境 conda create -n vnpy python=3.10
+        ii. 激活环境 source activate vnpy
+2. 安装vnpy基础环境
+    a. M1芯片: conda install -c conda-forge ta-lib
+    b. bash install_osx.sh
+    c. pip install vnpy_crypto,vnpy_binance
+    d. cd vnpy/apps/vnpy_algotrading → pip install .
 ```
 
 **注意：setup.cfg中列举了VeighNa框架安装所需的依赖库，requirements.txt中给出了这些依赖库的推荐安装版本。**
